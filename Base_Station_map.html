@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b636ccc9ea6c4cce83f142a7355226a8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b636ccc9ea6c4cce83f142a7355226a8" ></div>
+        
+</body>
+<script>    
+    
+            var map_b636ccc9ea6c4cce83f142a7355226a8 = L.map(
+                "map_b636ccc9ea6c4cce83f142a7355226a8",
+                {
+                    center: [55.71355606129033, 37.52589990161292],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5969d5af4aa64056a1747fcb172c87bf = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+            var marker_a9eb6cfd526d4072a99e2d3975e7a650 = L.marker(
+                [55.6174869, 37.6638961],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_447042d23a65481ca0990637843d3154 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_a9eb6cfd526d4072a99e2d3975e7a650.setIcon(custom_icon_447042d23a65481ca0990637843d3154);
+        
+    
+        var popup_dde5b9e3a18348229305ede084a73387 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f901f979f6045efa3fe4b6186c97b66 = $(`<div id="html_6f901f979f6045efa3fe4b6186c97b66" style="width: 100.0%; height: 100.0%;">Базовая станция:   Красногвардейская участковая ветеринарная лечебница  </div>`)[0];
+            popup_dde5b9e3a18348229305ede084a73387.setContent(html_6f901f979f6045efa3fe4b6186c97b66);
+        
+
+        marker_a9eb6cfd526d4072a99e2d3975e7a650.bindPopup(popup_dde5b9e3a18348229305ede084a73387)
+        ;
+
+        
+    
+    
+            var marker_5c0d9f54defe4c3c8e720d7ec22763f4 = L.marker(
+                [55.7185661, 37.6052745],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_c25d83cca0f84cf8a988107ebc06642e = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_5c0d9f54defe4c3c8e720d7ec22763f4.setIcon(custom_icon_c25d83cca0f84cf8a988107ebc06642e);
+        
+    
+        var popup_6de81af615c94ffbb01e61b15c76eef2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0129539f18c041119e3e09d939ef8f04 = $(`<div id="html_0129539f18c041119e3e09d939ef8f04" style="width: 100.0%; height: 100.0%;">Базовая станция:   Государственное бюджетное учреждение города Москвы «Московское объединение ветеринарии»  </div>`)[0];
+            popup_6de81af615c94ffbb01e61b15c76eef2.setContent(html_0129539f18c041119e3e09d939ef8f04);
+        
+
+        marker_5c0d9f54defe4c3c8e720d7ec22763f4.bindPopup(popup_6de81af615c94ffbb01e61b15c76eef2)
+        ;
+
+        
+    
+    
+            var marker_86dc00ab0ce24ab9866f5eba197fab80 = L.marker(
+                [55.802896, 37.5602079],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_f77dad7a189745aaa0e55b377197ef0b = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_86dc00ab0ce24ab9866f5eba197fab80.setIcon(custom_icon_f77dad7a189745aaa0e55b377197ef0b);
+        
+    
+        var popup_2fb65aff5b694e9b8e4c73c954f7c3fe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_316c0c4415144c4a934475b0ff66fdaa = $(`<div id="html_316c0c4415144c4a934475b0ff66fdaa" style="width: 100.0%; height: 100.0%;">Базовая станция:   Государственное бюджетное учреждение города Москвы «Московская ветеринарная станция по борьбе с болезнями животных»  </div>`)[0];
+            popup_2fb65aff5b694e9b8e4c73c954f7c3fe.setContent(html_316c0c4415144c4a934475b0ff66fdaa);
+        
+
+        marker_86dc00ab0ce24ab9866f5eba197fab80.bindPopup(popup_2fb65aff5b694e9b8e4c73c954f7c3fe)
+        ;
+
+        
+    
+    
+            var marker_aa22b876f6f948dbbfe029e0d06084db = L.marker(
+                [55.8031817, 37.5607527],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_49c14053034d490cab0300c4d91a2027 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_aa22b876f6f948dbbfe029e0d06084db.setIcon(custom_icon_49c14053034d490cab0300c4d91a2027);
+        
+    
+        var popup_e1dd7b0d1552430eb59ac530f0a8e48f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39486e07feae45f38629faa5ca04e274 = $(`<div id="html_39486e07feae45f38629faa5ca04e274" style="width: 100.0%; height: 100.0%;">Базовая станция:   Городская ветеринарная лаборатория  </div>`)[0];
+            popup_e1dd7b0d1552430eb59ac530f0a8e48f.setContent(html_39486e07feae45f38629faa5ca04e274);
+        
+
+        marker_aa22b876f6f948dbbfe029e0d06084db.bindPopup(popup_e1dd7b0d1552430eb59ac530f0a8e48f)
+        ;
+
+        
+    
+    
+            var marker_a199f8b7acc84428beec68dc63f119d5 = L.marker(
+                [55.783435, 37.6619444],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_9f84b1faff494a3c9be419cb4060aaec = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_a199f8b7acc84428beec68dc63f119d5.setIcon(custom_icon_9f84b1faff494a3c9be419cb4060aaec);
+        
+    
+        var popup_54d7442bcc684bf2ba4285393ca278e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61816c7570664cebaf428e0bb386355a = $(`<div id="html_61816c7570664cebaf428e0bb386355a" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Центрального административного округа города Москвы  </div>`)[0];
+            popup_54d7442bcc684bf2ba4285393ca278e8.setContent(html_61816c7570664cebaf428e0bb386355a);
+        
+
+        marker_a199f8b7acc84428beec68dc63f119d5.bindPopup(popup_54d7442bcc684bf2ba4285393ca278e8)
+        ;
+
+        
+    
+    
+            var marker_6c904b1f1a51496892f4079b990bad1b = L.marker(
+                [55.8449358, 37.5287068],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_c0dae2605ca9401aa2a445562f68a821 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_6c904b1f1a51496892f4079b990bad1b.setIcon(custom_icon_c0dae2605ca9401aa2a445562f68a821);
+        
+    
+        var popup_74f9da5453284523abe76b9cd61b0015 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a74d3bad59164377b53bd8a31c7703d3 = $(`<div id="html_a74d3bad59164377b53bd8a31c7703d3" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Северного административного округа города Москвы  </div>`)[0];
+            popup_74f9da5453284523abe76b9cd61b0015.setContent(html_a74d3bad59164377b53bd8a31c7703d3);
+        
+
+        marker_6c904b1f1a51496892f4079b990bad1b.bindPopup(popup_74f9da5453284523abe76b9cd61b0015)
+        ;
+
+        
+    
+    
+            var marker_3cb5c747eeae43fab0fa8509dffdec61 = L.marker(
+                [55.818503, 37.632896],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_866068c8615e4454ad30d48b812f947c = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_3cb5c747eeae43fab0fa8509dffdec61.setIcon(custom_icon_866068c8615e4454ad30d48b812f947c);
+        
+    
+        var popup_4e8ad068b3584bb2b21f346d1554f8a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6deee8ee13a7424caee0b25d4d8ecbd2 = $(`<div id="html_6deee8ee13a7424caee0b25d4d8ecbd2" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Северо-Восточного административного округа города Москвы  </div>`)[0];
+            popup_4e8ad068b3584bb2b21f346d1554f8a1.setContent(html_6deee8ee13a7424caee0b25d4d8ecbd2);
+        
+
+        marker_3cb5c747eeae43fab0fa8509dffdec61.bindPopup(popup_4e8ad068b3584bb2b21f346d1554f8a1)
+        ;
+
+        
+    
+    
+            var marker_9c0dbb59668a4da6b48daa5d8ac6545e = L.marker(
+                [55.859949, 37.6835866],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_ccaeed7574a14df796e7a64cdbc53f02 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_9c0dbb59668a4da6b48daa5d8ac6545e.setIcon(custom_icon_ccaeed7574a14df796e7a64cdbc53f02);
+        
+    
+        var popup_242e27cd8d244859893507287825df51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e67bab123b04032abdc362dd3b94b6a = $(`<div id="html_3e67bab123b04032abdc362dd3b94b6a" style="width: 100.0%; height: 100.0%;">Базовая станция:   Бабушкинская участковая ветеринарная лечебница  </div>`)[0];
+            popup_242e27cd8d244859893507287825df51.setContent(html_3e67bab123b04032abdc362dd3b94b6a);
+        
+
+        marker_9c0dbb59668a4da6b48daa5d8ac6545e.bindPopup(popup_242e27cd8d244859893507287825df51)
+        ;
+
+        
+    
+    
+            var marker_98a461c1f4db4c40ad1db8cfc7bec94e = L.marker(
+                [55.739221, 37.82401],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_40ab78a5729d4ea29b79032aec10d9ea = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_98a461c1f4db4c40ad1db8cfc7bec94e.setIcon(custom_icon_40ab78a5729d4ea29b79032aec10d9ea);
+        
+    
+        var popup_1b493f960b7f4811990bbb3d45e86c9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd3f85abc5ef42f59b2c7c0fbfef8a48 = $(`<div id="html_cd3f85abc5ef42f59b2c7c0fbfef8a48" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Восточного административного округа города Москвы  </div>`)[0];
+            popup_1b493f960b7f4811990bbb3d45e86c9d.setContent(html_cd3f85abc5ef42f59b2c7c0fbfef8a48);
+        
+
+        marker_98a461c1f4db4c40ad1db8cfc7bec94e.bindPopup(popup_1b493f960b7f4811990bbb3d45e86c9d)
+        ;
+
+        
+    
+    
+            var marker_97c45c31d9544e559e2a8f46c1e674dd = L.marker(
+                [55.742644, 37.698378],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_5d267649ccca459b80bfae09aeb3ce6d = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_97c45c31d9544e559e2a8f46c1e674dd.setIcon(custom_icon_5d267649ccca459b80bfae09aeb3ce6d);
+        
+    
+        var popup_ae6d522fff20404eb81c29578caaabaa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_486f8cd58de64fca97adaa510f153f7a = $(`<div id="html_486f8cd58de64fca97adaa510f153f7a" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Юго-Восточного административного округа города Москвы  </div>`)[0];
+            popup_ae6d522fff20404eb81c29578caaabaa.setContent(html_486f8cd58de64fca97adaa510f153f7a);
+        
+
+        marker_97c45c31d9544e559e2a8f46c1e674dd.bindPopup(popup_ae6d522fff20404eb81c29578caaabaa)
+        ;
+
+        
+    
+    
+            var marker_742331c76f2d4ff08c56cc0dea566a2e = L.marker(
+                [55.763045, 37.7198179],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_7bc1c3d3843846d8bd142fad1ba6e992 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_742331c76f2d4ff08c56cc0dea566a2e.setIcon(custom_icon_7bc1c3d3843846d8bd142fad1ba6e992);
+        
+    
+        var popup_671fb4138e3249ee87f97b0980b72fb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5c296c3935642cf94a024a41bf3ed59 = $(`<div id="html_a5c296c3935642cf94a024a41bf3ed59" style="width: 100.0%; height: 100.0%;">Базовая станция:   Калининская участковая ветеринарная лечебница  </div>`)[0];
+            popup_671fb4138e3249ee87f97b0980b72fb1.setContent(html_a5c296c3935642cf94a024a41bf3ed59);
+        
+
+        marker_742331c76f2d4ff08c56cc0dea566a2e.bindPopup(popup_671fb4138e3249ee87f97b0980b72fb1)
+        ;
+
+        
+    
+    
+            var marker_97e6ff943a764579b3bb60bb14093c49 = L.marker(
+                [55.6816475, 37.6343258],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_637ce7ae9ec84d13ac1f6382097d6c84 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_97e6ff943a764579b3bb60bb14093c49.setIcon(custom_icon_637ce7ae9ec84d13ac1f6382097d6c84);
+        
+    
+        var popup_8f5f976ee9754cdba51cc1ee3b5ac3f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64687ef4c6584dd888a3e1970da72101 = $(`<div id="html_64687ef4c6584dd888a3e1970da72101" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Южного административного округа города Москвы  </div>`)[0];
+            popup_8f5f976ee9754cdba51cc1ee3b5ac3f4.setContent(html_64687ef4c6584dd888a3e1970da72101);
+        
+
+        marker_97e6ff943a764579b3bb60bb14093c49.bindPopup(popup_8f5f976ee9754cdba51cc1ee3b5ac3f4)
+        ;
+
+        
+    
+    
+            var marker_4986998267b044f886c1a580e2571561 = L.marker(
+                [55.6613743, 37.6281667],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_5b70ab1000e94072807c56ea7f28604a = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_4986998267b044f886c1a580e2571561.setIcon(custom_icon_5b70ab1000e94072807c56ea7f28604a);
+        
+    
+        var popup_045e34bba2db4106ae258b6c7279f726 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffdfd50331c44df7bf304ca12ffd4f8b = $(`<div id="html_ffdfd50331c44df7bf304ca12ffd4f8b" style="width: 100.0%; height: 100.0%;">Базовая станция:   Советская участковая ветеринарная лечебница  </div>`)[0];
+            popup_045e34bba2db4106ae258b6c7279f726.setContent(html_ffdfd50331c44df7bf304ca12ffd4f8b);
+        
+
+        marker_4986998267b044f886c1a580e2571561.bindPopup(popup_045e34bba2db4106ae258b6c7279f726)
+        ;
+
+        
+    
+    
+            var marker_eee4db9c4b2b4c3a8e35286a6a25bb1f = L.marker(
+                [55.7051383, 37.6051123],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_981473dab00a41109ca6f6e2db18647a = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_eee4db9c4b2b4c3a8e35286a6a25bb1f.setIcon(custom_icon_981473dab00a41109ca6f6e2db18647a);
+        
+    
+        var popup_32c888dbe0124641aef15e03e25f590b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ac709bb64e74b8aa4a627bd5f552de3 = $(`<div id="html_0ac709bb64e74b8aa4a627bd5f552de3" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Юго-Западного административного округа города Москвы  </div>`)[0];
+            popup_32c888dbe0124641aef15e03e25f590b.setContent(html_0ac709bb64e74b8aa4a627bd5f552de3);
+        
+
+        marker_eee4db9c4b2b4c3a8e35286a6a25bb1f.bindPopup(popup_32c888dbe0124641aef15e03e25f590b)
+        ;
+
+        
+    
+    
+            var marker_6775523119e04f978af361ee812a904c = L.marker(
+                [55.5422328, 37.5572965],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_c8807163f1da4cd0a8f45698a91167c3 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_6775523119e04f978af361ee812a904c.setIcon(custom_icon_c8807163f1da4cd0a8f45698a91167c3);
+        
+    
+        var popup_5a3578b154f04bfb863bbad07ac637ab = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84789ab6b58d448bb0b640f53f9ba0fe = $(`<div id="html_84789ab6b58d448bb0b640f53f9ba0fe" style="width: 100.0%; height: 100.0%;">Базовая станция:   Бутовская участковая ветеринарная лечебница  </div>`)[0];
+            popup_5a3578b154f04bfb863bbad07ac637ab.setContent(html_84789ab6b58d448bb0b640f53f9ba0fe);
+        
+
+        marker_6775523119e04f978af361ee812a904c.bindPopup(popup_5a3578b154f04bfb863bbad07ac637ab)
+        ;
+
+        
+    
+    
+            var marker_9377708ba89849498df4cb683429fce6 = L.marker(
+                [55.7234037, 37.4352921],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_792f8d6eee584883a388a365f6add097 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_9377708ba89849498df4cb683429fce6.setIcon(custom_icon_792f8d6eee584883a388a365f6add097);
+        
+    
+        var popup_abfe82f7b452461d8e7ee80bce7f2030 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9e67dded2b824b1196332fd00edbbdd7 = $(`<div id="html_9e67dded2b824b1196332fd00edbbdd7" style="width: 100.0%; height: 100.0%;">Базовая станция:   Государственный центр экстренной ветеринарной помощи  </div>`)[0];
+            popup_abfe82f7b452461d8e7ee80bce7f2030.setContent(html_9e67dded2b824b1196332fd00edbbdd7);
+        
+
+        marker_9377708ba89849498df4cb683429fce6.bindPopup(popup_abfe82f7b452461d8e7ee80bce7f2030)
+        ;
+
+        
+    
+    
+            var marker_42b473aa188c484c9e22b8a3f8f61d74 = L.marker(
+                [55.8417888, 37.4369858],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_795a703b56664d198234cc36b2164dd2 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_42b473aa188c484c9e22b8a3f8f61d74.setIcon(custom_icon_795a703b56664d198234cc36b2164dd2);
+        
+    
+        var popup_7340b56edc2d444ca71beb88e3a63937 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_754cea5c9239463488109b55028d43a9 = $(`<div id="html_754cea5c9239463488109b55028d43a9" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Северо-Западного административного округа города Москвы  </div>`)[0];
+            popup_7340b56edc2d444ca71beb88e3a63937.setContent(html_754cea5c9239463488109b55028d43a9);
+        
+
+        marker_42b473aa188c484c9e22b8a3f8f61d74.bindPopup(popup_7340b56edc2d444ca71beb88e3a63937)
+        ;
+
+        
+    
+    
+            var marker_5eb8ca2158414bc89814942e8f0bc1db = L.marker(
+                [55.9832219, 37.2474249],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_58e37cdf591d4659bf0b108e21234a42 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_5eb8ca2158414bc89814942e8f0bc1db.setIcon(custom_icon_58e37cdf591d4659bf0b108e21234a42);
+        
+    
+        var popup_5a8d2558f2964e83b0f7aa42349b2e2e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a037df7291864bb79ccb9df75202d256 = $(`<div id="html_a037df7291864bb79ccb9df75202d256" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Зеленоградского административного округа города Москвы  </div>`)[0];
+            popup_5a8d2558f2964e83b0f7aa42349b2e2e.setContent(html_a037df7291864bb79ccb9df75202d256);
+        
+
+        marker_5eb8ca2158414bc89814942e8f0bc1db.bindPopup(popup_5a8d2558f2964e83b0f7aa42349b2e2e)
+        ;
+
+        
+    
+    
+            var marker_a50a6265eb3440fb96ef2a4f143c280d = L.marker(
+                [55.464539, 36.93868545],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_6fd732291c384878875a924729e26bd0 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_a50a6265eb3440fb96ef2a4f143c280d.setIcon(custom_icon_6fd732291c384878875a924729e26bd0);
+        
+    
+        var popup_1cdc2291ca1f44d8899309717ad52767 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_29d57097da894697bf150147504e31c3 = $(`<div id="html_29d57097da894697bf150147504e31c3" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Троицкого и Новомосковского административных округов города Москвы  </div>`)[0];
+            popup_1cdc2291ca1f44d8899309717ad52767.setContent(html_29d57097da894697bf150147504e31c3);
+        
+
+        marker_a50a6265eb3440fb96ef2a4f143c280d.bindPopup(popup_1cdc2291ca1f44d8899309717ad52767)
+        ;
+
+        
+    
+    
+            var marker_febd0b410be840a8bcfc6d59084db845 = L.marker(
+                [55.8014045, 37.7785829],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_4cc3e214ad174508ab623a2e628d3883 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_febd0b410be840a8bcfc6d59084db845.setIcon(custom_icon_4cc3e214ad174508ab623a2e628d3883);
+        
+    
+        var popup_42a1f1b233a448eb9d5a86de69d41005 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b6fe71a64684042a42b599b6f97ad20 = $(`<div id="html_6b6fe71a64684042a42b599b6f97ad20" style="width: 100.0%; height: 100.0%;">Базовая станция:   Первомайский ветеринарный участок  </div>`)[0];
+            popup_42a1f1b233a448eb9d5a86de69d41005.setContent(html_6b6fe71a64684042a42b599b6f97ad20);
+        
+
+        marker_febd0b410be840a8bcfc6d59084db845.bindPopup(popup_42a1f1b233a448eb9d5a86de69d41005)
+        ;
+
+        
+    
+    
+            var marker_87fa42f7411a4c5bb5735d7b420115be = L.marker(
+                [55.679273, 37.447263],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_9a6f3cc45d6645a9af3d0f9d81d757cf = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_87fa42f7411a4c5bb5735d7b420115be.setIcon(custom_icon_9a6f3cc45d6645a9af3d0f9d81d757cf);
+        
+    
+        var popup_15acea425a5444e49702e9ad2485960d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9a6d5df49bd42faa941a6bf223f0c8a = $(`<div id="html_c9a6d5df49bd42faa941a6bf223f0c8a" style="width: 100.0%; height: 100.0%;">Базовая станция:   Станция по борьбе с болезнями животных Западного административного округа города Москвы  </div>`)[0];
+            popup_15acea425a5444e49702e9ad2485960d.setContent(html_c9a6d5df49bd42faa941a6bf223f0c8a);
+        
+
+        marker_87fa42f7411a4c5bb5735d7b420115be.bindPopup(popup_15acea425a5444e49702e9ad2485960d)
+        ;
+
+        
+    
+    
+            var marker_ce716d6b91d34523a83575e21abc8873 = L.marker(
+                [55.787951, 37.359355],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_0890916f87604a7591d3186dc45a5ca6 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_ce716d6b91d34523a83575e21abc8873.setIcon(custom_icon_0890916f87604a7591d3186dc45a5ca6);
+        
+    
+        var popup_d9d4e24962e34745a8082de9dbaa4fd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61b367c385964382a5ebc04d26249a79 = $(`<div id="html_61b367c385964382a5ebc04d26249a79" style="width: 100.0%; height: 100.0%;">Базовая станция:   Рублевский ветеринарный участок  </div>`)[0];
+            popup_d9d4e24962e34745a8082de9dbaa4fd2.setContent(html_61b367c385964382a5ebc04d26249a79);
+        
+
+        marker_ce716d6b91d34523a83575e21abc8873.bindPopup(popup_d9d4e24962e34745a8082de9dbaa4fd2)
+        ;
+
+        
+    
+    
+            var marker_df68dcdd56184f048e55915242636127 = L.marker(
+                [55.5015994, 37.5641577],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_a2e5304aae7d44a99b701c2be8ed9815 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_df68dcdd56184f048e55915242636127.setIcon(custom_icon_a2e5304aae7d44a99b701c2be8ed9815);
+        
+    
+        var popup_69193e76118841b98b2cbe33c36eb89d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d83ea777488c4c5dab1f3485a3b1171f = $(`<div id="html_d83ea777488c4c5dab1f3485a3b1171f" style="width: 100.0%; height: 100.0%;">Базовая станция:   Ветеринарный участок Щербинка  </div>`)[0];
+            popup_69193e76118841b98b2cbe33c36eb89d.setContent(html_d83ea777488c4c5dab1f3485a3b1171f);
+        
+
+        marker_df68dcdd56184f048e55915242636127.bindPopup(popup_69193e76118841b98b2cbe33c36eb89d)
+        ;
+
+        
+    
+    
+            var marker_23244c011005425c9c36b56a3ad0756b = L.marker(
+                [55.620398, 37.4261956],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_33606f188747451da910e9a83c1a1433 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_23244c011005425c9c36b56a3ad0756b.setIcon(custom_icon_33606f188747451da910e9a83c1a1433);
+        
+    
+        var popup_c90b7e08244d4c528386a758fec8bb96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_707cea8f49944a9e8418b760ef081e00 = $(`<div id="html_707cea8f49944a9e8418b760ef081e00" style="width: 100.0%; height: 100.0%;">Базовая станция:   Ветеринарный участок Саларьево  </div>`)[0];
+            popup_c90b7e08244d4c528386a758fec8bb96.setContent(html_707cea8f49944a9e8418b760ef081e00);
+        
+
+        marker_23244c011005425c9c36b56a3ad0756b.bindPopup(popup_c90b7e08244d4c528386a758fec8bb96)
+        ;
+
+        
+    
+    
+            var marker_4f330fc636434e7194e37722c058fe48 = L.marker(
+                [55.4309583, 37.2762707],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_06f8e70651394db088128b38230e2026 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_4f330fc636434e7194e37722c058fe48.setIcon(custom_icon_06f8e70651394db088128b38230e2026);
+        
+    
+        var popup_d213eea5098e4c76867d20183d74c877 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_22bebda75c254c3d87a19a1eae92dc61 = $(`<div id="html_22bebda75c254c3d87a19a1eae92dc61" style="width: 100.0%; height: 100.0%;">Базовая станция:   Ветеринарный участок Красная Пахра  </div>`)[0];
+            popup_d213eea5098e4c76867d20183d74c877.setContent(html_22bebda75c254c3d87a19a1eae92dc61);
+        
+
+        marker_4f330fc636434e7194e37722c058fe48.bindPopup(popup_d213eea5098e4c76867d20183d74c877)
+        ;
+
+        
+    
+    
+            var marker_53c9da75f448478a97cd818a6f28fc1d = L.marker(
+                [55.73294445, 37.37034125],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_22655b78aa274f5c82bd7cb71564ff02 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_53c9da75f448478a97cd818a6f28fc1d.setIcon(custom_icon_22655b78aa274f5c82bd7cb71564ff02);
+        
+    
+        var popup_7d7de2ec848b4b878f94bf6e40af710d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3b4c4496a774f0db3acc00a36300e6f = $(`<div id="html_d3b4c4496a774f0db3acc00a36300e6f" style="width: 100.0%; height: 100.0%;">Базовая станция:   Ветеринарный участок Птичное  </div>`)[0];
+            popup_7d7de2ec848b4b878f94bf6e40af710d.setContent(html_d3b4c4496a774f0db3acc00a36300e6f);
+        
+
+        marker_53c9da75f448478a97cd818a6f28fc1d.bindPopup(popup_7d7de2ec848b4b878f94bf6e40af710d)
+        ;
+
+        
+    
+    
+            var marker_6855073b03a1419ebc19d432b3a05b8b = L.marker(
+                [55.3233425, 37.3471563],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_5a621e44cc35469fa2e41872530d0289 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_6855073b03a1419ebc19d432b3a05b8b.setIcon(custom_icon_5a621e44cc35469fa2e41872530d0289);
+        
+    
+        var popup_14beeb97b1ec4ec2952118db2b59e915 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7519da44611846b48ed59192fb1c52b3 = $(`<div id="html_7519da44611846b48ed59192fb1c52b3" style="width: 100.0%; height: 100.0%;">Базовая станция:   Ветеринарный участок Кленово  </div>`)[0];
+            popup_14beeb97b1ec4ec2952118db2b59e915.setContent(html_7519da44611846b48ed59192fb1c52b3);
+        
+
+        marker_6855073b03a1419ebc19d432b3a05b8b.bindPopup(popup_14beeb97b1ec4ec2952118db2b59e915)
+        ;
+
+        
+    
+    
+            var marker_b06a5c2729be47068633f076ec203bcb = L.marker(
+                [55.859046, 37.601483],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_5505249711384a90b11dd119567c69cb = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_b06a5c2729be47068633f076ec203bcb.setIcon(custom_icon_5505249711384a90b11dd119567c69cb);
+        
+    
+        var popup_9a63ba97478643678e6b0102ecbe44f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7ec08f3cacf147dcbd38231716714a68 = $(`<div id="html_7ec08f3cacf147dcbd38231716714a68" style="width: 100.0%; height: 100.0%;">Базовая станция:   Ветеринарный участок Отрадное  </div>`)[0];
+            popup_9a63ba97478643678e6b0102ecbe44f2.setContent(html_7ec08f3cacf147dcbd38231716714a68);
+        
+
+        marker_b06a5c2729be47068633f076ec203bcb.bindPopup(popup_9a63ba97478643678e6b0102ecbe44f2)
+        ;
+
+        
+    
+    
+            var marker_a2807991534349aa9aefb27c5b4d25bf = L.marker(
+                [55.73673255, 37.61211425],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_f440c6a97a814c1ba78bb4db0b7962f5 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_a2807991534349aa9aefb27c5b4d25bf.setIcon(custom_icon_f440c6a97a814c1ba78bb4db0b7962f5);
+        
+    
+        var popup_cff7560db1a4436795ce6f1d7646b380 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a606a3df0174724ad416aaf5bd2ab1e = $(`<div id="html_3a606a3df0174724ad416aaf5bd2ab1e" style="width: 100.0%; height: 100.0%;">Базовая станция:   Ветеринарный участок Садовод  </div>`)[0];
+            popup_cff7560db1a4436795ce6f1d7646b380.setContent(html_3a606a3df0174724ad416aaf5bd2ab1e);
+        
+
+        marker_a2807991534349aa9aefb27c5b4d25bf.bindPopup(popup_cff7560db1a4436795ce6f1d7646b380)
+        ;
+
+        
+    
+    
+            var marker_c841ee2472cb4e54aca0d09864abd2d4 = L.marker(
+                [55.6362374, 37.3470189],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_344f4270d1e44d51adb999745ae66c57 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_c841ee2472cb4e54aca0d09864abd2d4.setIcon(custom_icon_344f4270d1e44d51adb999745ae66c57);
+        
+    
+        var popup_c1df237184fd439bbea47b33850c0aa6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f91a568ed4a84d848c32df4eeaf544e3 = $(`<div id="html_f91a568ed4a84d848c32df4eeaf544e3" style="width: 100.0%; height: 100.0%;">Базовая станция:   Солнцевский ветеринарный участок  </div>`)[0];
+            popup_c1df237184fd439bbea47b33850c0aa6.setContent(html_f91a568ed4a84d848c32df4eeaf544e3);
+        
+
+        marker_c841ee2472cb4e54aca0d09864abd2d4.bindPopup(popup_c1df237184fd439bbea47b33850c0aa6)
+        ;
+
+        
+    
+    
+            var marker_193a69364c11458dbb4ab443bc9de583 = L.marker(
+                [55.913141, 37.5501979],
+                {}
+            ).addTo(map_b636ccc9ea6c4cce83f142a7355226a8);
+        
+    
+        var custom_icon_08db2f0988dc4527894dee7e226203e8 = L.icon({"iconSize": [10, 10], "iconUrl": "https://i.imgur.com/CYx04oC.png"});
+        marker_193a69364c11458dbb4ab443bc9de583.setIcon(custom_icon_08db2f0988dc4527894dee7e226203e8);
+        
+    
+        var popup_6ebe7b0bf0ab47e890ece1622e4ede73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15488d52c879456e87fe2d459a073aff = $(`<div id="html_15488d52c879456e87fe2d459a073aff" style="width: 100.0%; height: 100.0%;">Базовая станция:   Ветеринарный участок Северный  </div>`)[0];
+            popup_6ebe7b0bf0ab47e890ece1622e4ede73.setContent(html_15488d52c879456e87fe2d459a073aff);
+        
+
+        marker_193a69364c11458dbb4ab443bc9de583.bindPopup(popup_6ebe7b0bf0ab47e890ece1622e4ede73)
+        ;
+
+        
+    
+</script>
